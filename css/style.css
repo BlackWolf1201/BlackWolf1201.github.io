@@ -1,0 +1,152 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F5F5DC;
+    color: #333;
+    line-height: 1.5;
+    padding: 20px;
+  }
+  
+  /* Estilo do Card da Receita */
+  .recipe-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Imagem do Card */
+  .recipe-image {
+    width: 100%;
+    display: block;
+  }
+  
+  /* Conteúdo da Receita */
+  .recipe-content {
+    padding: 24px;
+  }
+  
+  /* Cabeçalho: Título e Descrição */
+  .recipe-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+    color: #222;
+  }
+  
+  .recipe-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Seção de Tempos */
+  .recipe-timing {
+    display: flex;
+    justify-content: space-between;
+    background: #f1f1f1;
+    padding: 10px 0;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 20px;
+  }
+  
+  .time-item {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .time-item .label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555555;
+  }
+  
+  .time-item .value {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+  }
+  
+  /* Seções de Ingredientes, Instruções e Nutrição */
+  .recipe-ingredients, 
+  .recipe-instructions, 
+  .recipe-nutrition {
+    margin-bottom: 20px;
+  }
+  
+  .recipe-ingredients h2,
+  .recipe-instructions h2,
+  .recipe-nutrition h2 {
+    font-size: 1.5rem;
+    color: #333;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Lista de Ingredientes */
+  .recipe-ingredients ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .recipe-ingredients li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  /* Lista de Instruções */
+  .recipe-instructions ol {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .recipe-instructions li {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  /* Tabela Nutricional */
+  .recipe-nutrition table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .recipe-nutrition th,
+  .recipe-nutrition td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  .recipe-nutrition th {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    .recipe-timing {
+      flex-direction: column;
+    }
+    
+    .time-item {
+      margin-bottom: 10px;
+    }
+  }
+  
